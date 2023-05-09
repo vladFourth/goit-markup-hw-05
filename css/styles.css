@@ -118,7 +118,7 @@ text-decoration: none;
         /* NAVY BLUE */
         color: var(--color-grey);
         /* padding: 24px 0; */
-        position: relative;
+        
 }
 .header-nav:hover{
 color: var(--color-ocean);
@@ -578,6 +578,9 @@ margin-bottom: 8px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-right: 76px;
+    position: relative;
+    color: #404bbf;
+    
 }
 
 .list {
