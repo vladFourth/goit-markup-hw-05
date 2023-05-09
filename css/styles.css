@@ -695,13 +695,14 @@ margin-bottom: 8px;
 .modal-window-button-close:focus {
     background-color: var(--color-ocean);
     border: none;
+    fill: var(--color-white);
 }
 
 .modal-window-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
 
-.modal-window-icon:hover,
+/* .modal-window-icon:hover,
 .modal-window-icon:focus {
 fill: var(--color-white);
-}
+} */
