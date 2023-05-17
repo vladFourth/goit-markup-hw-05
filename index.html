@@ -429,47 +429,67 @@
           </svg>
         </button>
         <div class="modal-window-form">
-          <h3 class="form-text">
-            Leave your contacts and we will call you back
-          </h3>
+          <p class="form-text">Leave your contacts and we will call you back</p>
           <form>
-            <ul class="list">
-              <li>
-                <label>
+            <ul class="list form-list-position">
+              <li class="form-list">
+                <label class="form-list-label form-list-label-name">
                   Name
-                  <input type="text" name="name" autofocus />
+                  <input
+                    class="form-list-input"
+                    type="text"
+                    name="name"
+                    autofocus
+                  />
                 </label>
+                <svg class="form-list-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-person-form"></use>
+                </svg>
               </li>
-              <li>
-                <label>
+              <li class="form-list">
+                <label class="form-list-label">
                   Phone
-                  <input type="tel" name="phone" />
+                  <input class="form-list-input" type="tel" name="phone" />
                 </label>
+                <svg class="form-list-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-phone-form"></use>
+                </svg>
               </li>
-              <li>
-                <label>
+              <li class="form-list">
+                <label class="form-list-label">
                   Email
-                  <input type="email" name="email" />
+                  <input class="form-list-input" type="email" name="email" />
                 </label>
+                <svg class="form-list-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email-form"></use>
+                </svg>
               </li>
-              <li>
-                <label>
+              <div class="form-textarea">
+                <label class="form-list-textarea">
                   Comment
                   <textarea
+                    class="form-textarea-comment"
                     name="comment"
                     rows="5"
                     placeholder="Text input"
                   ></textarea>
                 </label>
-              </li>
+              </div>
             </ul>
+            <div class="form-agreement">
+              <input
+                class="form-agreement-checkbox"
+                type="checkbox"
+                name="agreement"
+              />
+              <label class="form-agreement-text">
+                I accept the terms and conditions of the<a href="">Privacy Policy</a>
+              </label>
+            </div>
 
-            <label>
-              <input type="checkbox" name="agreement" checked />
-              I accept the terms and conditions of the
-              <a href="">Privacy Policy</a>
-            </label>
-            <button type="submit">Send</button>
+            <button class="form-list-btm btm" type="submit" data-modal-close="">
+              Send
+            </button>
           </form>
         </div>
       </div>
